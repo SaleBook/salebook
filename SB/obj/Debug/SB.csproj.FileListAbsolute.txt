@@ -1,0 +1,13 @@
+D:\work\salebook\dev\POS\bin\SB.dll
+D:\work\salebook\dev\POS\bin\SB.pdb
+D:\work\salebook\dev\POS\obj\Debug\SB.csprojResolveAssemblyReference.cache
+D:\work\salebook\dev\POS\obj\Debug\SB.dll
+D:\work\salebook\dev\POS\obj\Debug\SB.pdb
+D:\work\salebook\dev\SB\bin\SB.dll
+D:\work\salebook\dev\SB\bin\SB.pdb
+D:\work\salebook\dev\SB\obj\Debug\SB.csprojResolveAssemblyReference.cache
+D:\work\salebook\dev\SB\obj\Debug\SB.dll
+D:\work\salebook\dev\SB\obj\Debug\SB.pdb
+D:\work\salebook\dev\SB\bin\SBBL.dll
+D:\work\salebook\dev\SB\bin\log4net.dll
+D:\work\salebook\dev\SB\bin\SBBL.pdb

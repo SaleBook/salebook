@@ -1,0 +1,45 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body
+{
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+
+#header
+{
+    /*background-color: #B24926;*/
+    position: relative;
+    margin-bottom: 5px;
+    padding: 0;
+    border-bottom : 1px solid #FF8040;
+}
+
+#header #logo
+{
+   padding: 0px 0px 0px 10px;
+}
+
+
+#main
+{
+    /*padding: 10px 30px 15px 30px;*/
+    margin-bottom: 30px;
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+}
+
+#footer
+{
+
+}
+
+

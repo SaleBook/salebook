@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{673FFD02-F0A9-45A0-910D-44EDC794249D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SBBL</RootNamespace>
+    <AssemblyName>SBBL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\Common\BLEnum.cs" />
+    <Compile Include="Component\Common\DataCryptography.cs" />
+    <Compile Include="Component\Common\TypeConvertor.cs" />
+    <Compile Include="Component\Common\BLUtil.cs" />
+    <Compile Include="Component\Entity\EFb.cs" />
+    <Compile Include="Component\Entity\ELogin.cs" />
+    <Compile Include="Component\Session\Login.cs" />
+    <Compile Include="Dao\BaseDao.cs" />
+    <Compile Include="Dao\Modules\Account\AccountDao.cs" />
+    <Compile Include="Dao\Modules\IProduct.cs" />
+    <Compile Include="Dao\Modules\IShopDelivery.cs" />
+    <Compile Include="Dao\Modules\IShopBank.cs" />
+    <Compile Include="Dao\Modules\IAccount.cs" />
+    <Compile Include="Dao\Modules\ISystemOperation.cs" />
+    <Compile Include="Dao\Modules\IMaster.cs" />
+    <Compile Include="Dao\Modules\Master\BankDao.cs" />
+    <Compile Include="Dao\Modules\Master\DeliveryDao.cs" />
+    <Compile Include="Dao\Modules\Master\NoteDao.cs" />
+    <Compile Include="Dao\Modules\Shop\ProductDao.cs" />
+    <Compile Include="Dao\Modules\Shop\ShopBankDao.cs" />
+    <Compile Include="Dao\Modules\Shop\ShopDeliveryDao.cs" />
+    <Compile Include="Dao\Modules\SystemOperation\SystemOperationDao.cs" />
+    <Compile Include="Dto\Modules\Account\EAccount.cs" />
+    <Compile Include="Dto\Modules\Master\EOption.cs" />
+    <Compile Include="Dto\Modules\Master\ENote.cs" />
+    <Compile Include="Dto\Modules\Master\EDelivery.cs" />
+    <Compile Include="Dto\Modules\Master\EBank.cs" />
+    <Compile Include="Dto\Modules\Shop\EProduct.cs" />
+    <Compile Include="Dto\Modules\Shop\EShopNote.cs" />
+    <Compile Include="Dto\Modules\Shop\EShopDelivery.cs" />
+    <Compile Include="Dto\Modules\Shop\EShopBank.cs" />
+    <Compile Include="Dto\Modules\SystemOperation\ESystemOperation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dao\Modules\Order\" />
+    <Folder Include="Dao\Modules\Report\" />
+    <Folder Include="Dto\Modules\Order\" />
+    <Folder Include="Dto\Modules\Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

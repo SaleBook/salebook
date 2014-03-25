@@ -1,0 +1,10 @@
+D:\work\pos service\dev\POS\POSBL\bin\Debug\POSBL.dll
+D:\work\pos service\dev\POS\POSBL\bin\Debug\POSBL.pdb
+D:\work\pos service\dev\POS\POSBL\obj\Debug\POSBL.dll
+D:\work\pos service\dev\POS\POSBL\obj\Debug\POSBL.pdb
+D:\work\pos\dev\POS\POSBL\obj\Debug\POSBL.csprojResolveAssemblyReference.cache
+D:\work\pos\dev\POS\POSBL\obj\Debug\POSBL.dll
+D:\work\pos\dev\POS\POSBL\obj\Debug\POSBL.pdb
+D:\work\pos\dev\POS\POSBL\bin\Debug\POSBL.dll
+D:\work\pos\dev\POS\POSBL\bin\Debug\POSBL.pdb
+D:\work\pos\dev\POS\POSBL\bin\Debug\log4net.dll

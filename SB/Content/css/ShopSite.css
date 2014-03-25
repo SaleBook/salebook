@@ -1,0 +1,253 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body
+{
+    font-size: 0.9em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+table
+{
+    width: 100%;
+}
+
+table tr, table td
+{
+    padding:5px;
+}
+
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+
+#header
+{
+    background-color: #e5e5e5;
+    position: relative;
+    display:block;
+    margin-bottom: 5px;
+    padding: 0;
+    border-bottom : 1px solid #D1D0CE;
+    height:60px;
+}
+
+#header #logo
+{
+   left: 20px;
+   float:left;
+   width:200px;
+   margin: 5px;
+}
+
+#header #menu
+{
+   
+   float:right;
+   height:40px;
+   width:200px;
+    margin: 5px;
+}
+
+#header #user
+{
+   float:right;
+   height:40px;
+   width:200px;
+   margin: 5px 5px;
+}
+
+#main
+{
+    margin: 20px auto 10px auto; 
+    padding: 0px;
+    width: 1000px;
+}
+
+/*#main #leftContent
+{
+  float:left;
+  width:200px;
+}
+
+#main #content
+{
+    padding: 0px 0px 0px 10px;
+    float:left;
+}*/
+
+#footer
+{
+
+}
+
+#text
+{
+float:left;
+width:100px;
+}
+
+/*CSS for dropdown box*/
+select
+{
+width: 200px;
+height: 29px;
+border-radius: 3px;
+border: 1px solid #CCC;
+box-shadow: 1px 1px 5px #CCC;
+}
+select: hover
+{
+width: 200px;
+height: 29px;
+border-radius: 3px;
+border: 1px solid #CCC;
+box-shadow: 1px 1px 5px #CCC;
+}
+
+/*CSS for input textbox and password*/
+
+input[type='text'], input[type='password']
+{
+width: 200px;
+height: 29px;
+border-radius: 3px;
+border: 1px solid #CCC;
+padding-left: 8px;
+box-shadow: 1px 1px 5px #CCC;
+}
+
+input[type='text']:hover, input[type='password']:hover
+{
+width: 200px;
+height: 29px;
+border-radius: 3px;
+border: 1px solid #aaa;
+padding-left: 8px;
+box-shadow: 1px 1px 5px #CCC;
+}
+
+/*CSS for textarea*/
+
+textarea
+{
+width: 200px;
+height: 90px;
+border-radius: 3px;
+border: 1px solid #CCC;
+padding-left: 8px;
+box-shadow: 1px 1px 5px #CCC;
+}
+textarea:hover
+{
+width: 200px;
+height: 90px;
+border-radius: 3px;
+border: 1px solid #aaa;
+padding-left: 8px;
+box-shadow: 1px 1px 5px #CCC;
+}
+
+/*input type for submit button*/
+
+input[type='button'], input[type='submit']
+{
+width: 150px;
+height: 34px;
+border: 1px solid #D1D0CE;
+color:White;
+font-weight:bold;
+background-color:#4863A0 ;
+}
+input[type='button'], input[type='submit']:hover
+{
+width: 150px;
+height: 34px;
+border: 1px solid #B6B6B4;
+background-color:#4863A0 ;
+}
+
+.status-active
+{
+    background-color:green !important;
+}
+
+.status-non-active
+{
+    background-color:red !important;
+}
+
+
+.field-validation-error
+{
+    color:red;
+}
+
+.page-list
+{
+    padding: 5px 0px;
+    height:70px;
+}
+
+.page-list img
+{
+   float:left;
+   margin-right: 5px;
+}
+
+.page-list a
+{
+   float:left;
+   margin-right: 20px;
+   color: #1c2a47;
+}
+
+.page-display
+{
+    padding: 5px 0px;
+    height:45px;
+    float:right;
+    width:200px;
+}
+
+.page-display img
+{
+   float:left;
+   margin-right: 5px;
+}
+
+.page-display a
+{
+   float:left;
+   margin-right: 20px;
+   color: #1c2a47;
+}
+
+.popup-1
+{
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    color: #111;
+    min-width: 450px;
+    padding: 25px;
+    display:none;
+    width:650px;
+    height:400px
+}
+
+/* override fb */
+.mvs
+{
+    margin-bottom: 0px;
+}
+
+.fsm
+{
+    
+}
+

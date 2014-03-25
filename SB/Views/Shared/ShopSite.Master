@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+
+    <link href='~/Content/css/jquery.dataTables_themeroller.css' rel="stylesheet" type="text/css" />
+    <link href='~/Content/css/ShopSite.css' rel="stylesheet" type="text/css" />
+    <link href='~/Content/css/dropdown.menu.css' rel="stylesheet" type="text/css" />
+    <link href='~/Content/css/table.simple.css' rel="stylesheet" type="text/css" />
+
+    <script src="<%= ResolveUrl("~/Scripts/MicrosoftAjax.debug.js") %>" type="text/javascript"></script>
+    <script src="<%= ResolveUrl("~/Scripts/MicrosoftMvcValidation.debug.js") %>" type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery-1.9.1.js")%>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/dropdown.menu.js")%>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery.ddslick.js")%>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery.alerts.js")%>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery_bpopup_min.js")%>' type="text/javascript"></script>
+
+
+     <script language="javascript" type="text/javascript">
+         $(document).ready(function () {
+             $.post('GetPageData', function (data) {
+                 var display = "<img  alt='' width='40' height='40' src='" + data.FanPageImageUrl + "'  />" +
+                            "<a href='" + data.FanPageLink + "' >" + data.FanPageName + "</a>" +
+                              "<a href='" + data.FanPageLink + "' >" + data.FanPageName + "</a>";
+                 $('#displayShop').html(display);
+             });
+
+         });
+
+         
+          
+    </script>
+
+</head>
+<body>
+
+        <div id="header">
+           <div id='logo'>
+           <%--<img  src="../../Content/image/logo.png" width='80px' height='45' />--%>
+           </div>
+          <%-- <div id='user' >
+             <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+           </div>--%>
+           <div id="menu" class="dropdown-menu">
+                        <a><span class='shop_icon'></span>รายการสั่งซื้อ</a>
+						<ul class="dropdown">
+                            <li><a href='<%= ResolveUrl("~/shop")%>' id='menuShop' ><span class='shop_icon'></span>รายการสั่งซื้อ</a></li>
+							<li><a href='<%= ResolveUrl("~/shop/bank")%>' id='menuBank' ><span class='bank_icon'></span>บัญชีธนคาร</a></li>
+							<li><a href='<%= ResolveUrl("~/shop/delivery")%>' id='menuDelivery'><span class='delivery_icon'></span>ส่งสินค้า</a></li>
+							<li><a href='<%= ResolveUrl("~/shop/product")%>' id='menuProduct' ><span class='product_icon'></span>สินค้า</a></li>
+                            <li><a href='<%= ResolveUrl("~/shop/note")%>' id='menuNote' ><span class='note_icon'></span>ข้อความ</a></li>
+                            <li><a href='<%= ResolveUrl("~/shop/seting")%>' id='menuSeting' ><span class='setting_icon'></span>ตั้งค่า</a></li>
+						</ul>
+			</div>
+            <div id='displayShop' class='page-display'>
+            </div>
+            <div style='clear:both' ></div>
+        </div>
+        <div id='main'>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+        <div id='footer'>
+            
+        </div>
+</body>
+</html>

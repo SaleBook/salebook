@@ -1,0 +1,214 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: transparent; 
+}
+
+::-moz-selection {
+    background: transparent; 
+}
+
+/* DEMO 5 */
+
+.dropdown-menu {
+    /* Size & position */
+    position: relative;
+    width: 200px;
+    padding: 12px 5px;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.dropdown-menu:after { /* Little arrow */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #000000 transparent;
+}
+
+.dropdown-menu .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease-out;
+}
+
+.dropdown-menu .dropdown li {
+    padding: 0 5px ;
+}
+
+.dropdown-menu .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.dropdown-menu .dropdown li:last-of-type a {
+    border: none;
+}
+
+.dropdown-menu .dropdown li i {
+    margin-right: 5px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+/* Hover state */
+
+.dropdown-menu .dropdown li:hover a {
+    /*color: #57a9d9;*/
+}
+
+/* Active state */
+
+.dropdown-menu.active {
+    border-radius: 5px 5px 0 0;
+    background: #4863A0;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.dropdown-menu.active a{
+    color: white;
+}
+
+.dropdown-menu.active:after {
+    border-color: #000000 transparent;
+}
+
+.dropdown-menu.active .dropdown {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 400px;
+}
+
+.dropdown-menu .dropdown li:hover {
+    background-color: #BCC6CC;
+}
+
+/* icon image */
+.shop_icon
+{
+    background: url('../image/shop.png');
+    background-repeat:no-repeat;
+    width: 32px;
+    height: 32px;
+    display:block;
+    float:left;
+    position:relative;
+    top:-8px;
+    margin: 0px 15px 0px 5px;
+}
+.bank_icon
+{
+    background: url('../image/bank.png');
+    background-repeat:no-repeat;
+    width: 32px;
+    height: 32px;
+    display:block;
+    float:left;
+    position:relative;
+    top:-8px;
+    margin: 0px 15px 0px 5px;
+}
+.delivery_icon
+{
+    background: url('../image/delivery.png');
+    background-repeat:no-repeat;
+    width: 32px;
+    height: 32px;
+    display:block;
+    float:left;
+    position:relative;
+    top:-8px;
+    margin: 0px 15px 0px 5px;
+}
+.product_icon
+{
+    background: url('../image/box.png');
+    background-repeat:no-repeat;
+    width: 32px;
+    height: 32px;
+    display:block;
+    float:left;
+    position:relative;
+    top:-8px;
+    margin: 0px 15px 0px 5px;
+}
+
+.note_icon
+{
+    background: url('../image/note.png');
+    background-repeat:no-repeat;
+    width: 32px;
+    height: 32px;
+    display:block;
+    float:left;
+    position:relative;
+    top:-8px;
+    margin: 0px 15px 0px 5px;
+}
+
+.setting_icon
+{
+    background: url('../image/setting.png');
+    background-repeat:no-repeat;
+    width: 32px;
+    height: 32px;
+    display:block;
+    float:left;
+    position:relative;
+    top:-8px;
+    margin: 0px 15px 0px 5px;
+}

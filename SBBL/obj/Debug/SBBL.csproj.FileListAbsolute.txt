@@ -1,0 +1,12 @@
+D:\work\salebook\dev\POSBL\bin\Debug\SBBL.dll
+D:\work\salebook\dev\POSBL\bin\Debug\SBBL.pdb
+D:\work\salebook\dev\POSBL\bin\Debug\log4net.dll
+D:\work\salebook\dev\POSBL\obj\Debug\SBBL.csprojResolveAssemblyReference.cache
+D:\work\salebook\dev\POSBL\obj\Debug\SBBL.dll
+D:\work\salebook\dev\POSBL\obj\Debug\SBBL.pdb
+D:\work\salebook\dev\SBBL\bin\Debug\SBBL.dll
+D:\work\salebook\dev\SBBL\bin\Debug\SBBL.pdb
+D:\work\salebook\dev\SBBL\bin\Debug\log4net.dll
+D:\work\salebook\dev\SBBL\obj\Debug\SBBL.csprojResolveAssemblyReference.cache
+D:\work\salebook\dev\SBBL\obj\Debug\SBBL.dll
+D:\work\salebook\dev\SBBL\obj\Debug\SBBL.pdb
